@@ -10,6 +10,11 @@ import { HomePage } from '../home/home.page';
 })
 export class SlidesPage{
 
+ /*  ionViewWillEnter() {
+    this.screenOrientation.onChange().subscribe(() => {
+      this.slides.resize();
+    });
+  } */
 
   constructor(
     private router: Router) {}
@@ -41,6 +46,7 @@ export class SlidesPage{
     }
   ];
 
+  
   nextpage() {
     this.router.navigateByUrl('home');
   }
